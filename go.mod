@@ -1,3 +1,3 @@
-module github.com/anupam-gogoi/cloud-integrator
+module github.com/cloudintegrator/cloud-integrator
 
 go 1.18
