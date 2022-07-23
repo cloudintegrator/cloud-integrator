@@ -1,15 +1,20 @@
 package spec
 
-type App struct {
-	Name       string       `yaml:"name"`
-	Listener   Listener     `yaml:"listener"`
-	Processors []Processors `yaml:"processors"`
+type AppSpec struct {
+	Name       string           `yaml:"name"`
+	Listener   ListenerSpec     `yaml:"listener"`
+	Processors []ProcessorsSpec `yaml:"processors"`
 }
 
-type Listener struct {
-	Type string `yaml:"type"`
+type ListenerSpec struct {
+	Type   string `yaml:"type"`
+	Config Config `yaml:"config"`
 }
 
-type Processors struct {
-	Type string `yaml:"type"`
+type ProcessorsSpec struct {
+	Type   string `yaml:"type"`
+	Config Config `yaml:"config"`
+}
+
+type Config struct {
 }
