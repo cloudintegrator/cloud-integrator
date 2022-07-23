@@ -1,6 +1,6 @@
 package spec
 
-type Processor struct {
+type ProcessorSpec struct {
 	Name string `json:"name,omitempty"`
 }
 

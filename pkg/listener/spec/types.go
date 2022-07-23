@@ -1,5 +1,5 @@
 package spec
 
-type Listener struct {
+type ListenerSpec struct {
 	Name string `json:"name,omitempty"`
 }
