@@ -1,4 +1,16 @@
 name: HelloApp
-listner:
+listener:
   type: HttpListener
   config:
+    host: localhost
+    port: 8080
+    basepath: /app/*
+processors:
+  - type: DBConnector
+    config:
+      host: localhost
+      port: 5503
+  - type: Logger
+    config:
+      level: ERROR
+
